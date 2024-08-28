@@ -1,135 +1,133 @@
 body{
-    width:100vw;
-    height:100vh;
-    overflow-x: hidden;
+    overflow-x:hidden;
     margin:0;
-    background-color: rgb(226, 226, 226);
     font-family:system-ui;
+    width:100vw;
+    background-image: url("./photos/pexels-fotoaibe-1643383.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 html{
     scroll-behavior: smooth;
 }
 header{
-    margin-top:0;
+    position:fixed;
     width:100vw;
+    top:0vh;
 }
-.quality{
-    font-size: 2rem;
-    padding-left: 10vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-.logo{
-    font-size:4rem;
+header > p{
     text-align: center;
-    margin-top: 0;
-    color:brown;
-}
-.radius{
-    border-radius: 10px;
-}
-.border{
-    border:1px solid black;
-}
-.opening-img{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-}
-.rate-section > h2{
-    text-align:center;
-}
-ol{
     font-size:1.5rem;
+    font-weight:700;
+}
+header > nav{
+   display:flex;
+   flex-direction:row;
+   justify-content:space-evenly;
+   background-color: bisque;
+   padding-top:2vh;
+   padding-bottom:2vh;
+}
+header > nav > a{
+    text-decoration:none;
+    font-size:1rem;
     color:black;
-}
-li{
-    list-style-type:disc;
-}
-.star{
-    color:yellow;
-}
-
-.gallery > h3{
-   text-align:center;
-}
-.gallery > img{
-    width:300px;
-    height:300px;
-    margin-left: 3vw;
-    margin-bottom: 3vw;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    &:hover{
+        text-decoration:underline black;
+    }
 }
 main{
+    margin-top: 25vh;
     width:100vw;
 }
-.center{
+#home > h1{
+    padding-top:5vh;
+    text-align:center;
+    padding-bottom:5vh;
+}
+#furniture{
+    width:100vw;
+}
+#furniture > p{
+    text-align:center;
+    font-size:1.5rem;
+}
+figure{
+    border:1px solid white;
+    width:20vw;
+    background-color: white;
     text-align: center;
+    border-radius:5px;
+    box-shadow:0 0 10px black;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+figure > img{
+    height:20vw;
+    width:20vw;
+}
+.products{
+    display:grid;
+    width:100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#service > ul{
+    background-color: white;
+    border-radius:10px;
+    text-align:center;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding-bottom: 5vh;
+    box-shadow:0 0 10px black;
+}
+#service > ul > li{
+    padding-top: 5vh;
+}
+#service > p{
+    font-size:1.5rem;
+    text-align:center;
+}
+#service{
+    margin-top:10vh;
+}
+.instagram{
+    list-style-image: url("./icons/iconmonstr-instagram-13.svg");
+}
+.facebook{
+    list-style-image: url("./icons/iconmonstr-facebook-6.svg");
+}
+.gmail{
+    list-style-image: url("./icons/iconmonstr-gmail-4.svg");
+}
+.number{
+    list-style-image: ;
+}
+.flex-v-center{
+    display:flex;
+    align-items: center;
 }
 footer{
-    background-color: rgb(234, 105, 105);
-    color:white;
-    font-size:1rem;
     width:100vw;
+    background-color: white;
 }
-.contact{
+footer > .f-p{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight: 600;
+}
+footer > div{
     display:flex;
     justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.dev{
+    text-align:center;
+    font-size:1rem;
+    font-weight: 600;
 }
 @media only screen and (max-width:500px){
-    body{
-        width:100vw;
-        margin:0;
-        overflow-x:hidden;
-    }
-    footer{
-        width:100vw;
-    }
-    .contact{
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-    }
-    .logo{
-        font-size:2rem;
-    }
-    .radius{
-        margin-bottom:2vh;
-        height:30vw;
-        width:30vw;
-    }
-    .gallery > img{
-        width:60vw;
-        height:60vw;
-        margin-left:20vw;
-        margin-right:20vw;
-    }
-    ol{
-      font-size:1rem;
-      padding-right:3vw;
-    }
-}
-@media only screen and (min-width:501px){
-    .gallery > img{
-        height:30vw;
-        width:30vw;
-        margin-left:10vw;
-    }
-    .logo{
-        font-size:3rem;
-        padding-left:3vw;
-    }
-    ol{
-        font-size:1rem;
-        padding-right:5vw;
-    }
-    .contact{
-        display:flex;
-        flex-direction:row;
-    }
-    .detail-div{
-        padding-left:5vw;
+    header > p{
+        font:1rem bold;
     }
 }
